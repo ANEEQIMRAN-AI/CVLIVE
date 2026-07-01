@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aneeq Imran — AI Engineer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{sg:['Space Grotesk','sans-serif']},colors:{base:'#050508',sf:'#0a0a10',cd:'#111118',gd:'#22c55e',gr:'#4ade80',rs:'#16a34a',vt:'#059669',em:'#10b981',sk:'#34d399'}}}}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#050508;color:#e4e4ec;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#050508}::-webkit-scrollbar-thumb{background:linear-gradient(#22c55e,#059669);border-radius:9px}
+#ptc{position:fixed;inset:0;z-index:0;pointer-events:none}
+.tc{display:inline-block;width:3px;height:1.1em;background:#22c55e;margin-left:3px;animation:bk .75s infinite;vertical-align:text-bottom}
+@keyframes bk{0%,48%{opacity:1}50%,100%{opacity:0}}
+.gl{background:rgba(17,17,24,.55);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.05)}
+.gls{background:rgba(17,17,24,.75);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.07)}
+.glg{background:rgba(17,17,24,.5);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(34,197,94,.12);box-shadow:0 8px 32px rgba(34,197,94,.04)}
+.rv{opacity:0;transform:translateY(60px) rotateX(8deg);transform-origin:bottom center;transition:all 1s cubic-bezier(.16,1,.3,1)}.rv.a{opacity:1;transform:translateY(0) rotateX(0)}
+.rl{opacity:0;transform:translateX(-70px) scale(.92);transition:all 1s cubic-bezier(.16,1,.3,1)}.rl.a{opacity:1;transform:translateX(0) scale(1)}
+.rr{opacity:0;transform:translateX(70px) scale(.92);transition:all 1s cubic-bezier(.16,1,.3,1)}.rr.a{opacity:1;transform:translateX(0) scale(1)}
+.rs{opacity:0;transform:scale(.7) rotate(-8deg);transition:all 1s cubic-bezier(.16,1,.3,1)}.rs.a{opacity:1;transform:scale(1) rotate(0)}
+.e1{transition-delay:.1s}.e2{transition-delay:.2s}.e3{transition-delay:.3s}.e4{transition-delay:.4s}.e5{transition-delay:.5s}.e6{transition-delay:.6s}.e7{transition-delay:.7s}.e8{transition-delay:.8s}.e9{transition-delay:.9s}
+.gt{background:linear-gradient(135deg,#4ade80,#22c55e,#10b981,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gt-shift 6s ease-in-out infinite;background-size:200% 200%}
+@keyframes gt-shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hc{transition:all .5s cubic-bezier(.16,1,.3,1);border:1px solid rgba(255,255,255,.04)}
+.hc:hover{transform:perspective(800px) rotateY(-2deg) rotateX(1deg) translateY(-8px);border-color:rgba(34,197,94,.2);box-shadow:0 25px 60px rgba(0,0,0,.5),0 0 50px rgba(34,197,94,.06)}
+.nl{position:relative}.nl::after{content:'';position:absolute;bottom:-4px;left:50%;width:0;height:2px;background:linear-gradient(90deg,#22c55e,#10b981);transition:all .3s;transform:translateX(-50%);border-radius:1px}.nl:hover::after,.nl.act::after{width:100%}
+.mb{position:relative;overflow:hidden;transition:all .3s}.mb::before{content:'';position:absolute;top:50%;left:50%;width:0;height:0;background:rgba(34,197,94,.06);border-radius:50%;transform:translate(-50%,-50%);transition:all .5s}.mb:hover::before{width:300px;height:300px}
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+.hrr{background:conic-gradient(from var(--a),#22c55e,#16a34a,#059669,#10b981,#34d399,#22c55e);animation:bspin 5s linear infinite;border-radius:inherit}
+@keyframes bspin{to{--a:360deg}}
+.sw{animation:sway 6s ease-in-out infinite}.sw2{animation:sway 6s ease-in-out infinite;animation-delay:-3s}.sw3{animation:sway 6s ease-in-out infinite;animation-delay:-1.5s}
+@keyframes sway{0%,100%{transform:translate(0,0) rotate(0deg)}25%{transform:translate(8px,-14px) rotate(2.5deg)}50%{transform:translate(-5px,-20px) rotate(-1.5deg)}75%{transform:translate(-10px,-10px) rotate(2deg)}}
+.morph{animation:morph 10s ease-in-out infinite;opacity:.06}
+@keyframes morph{0%,100%{border-radius:42% 58% 70% 30%/45% 45% 55% 55%;transform:scale(1) rotate(0deg)}33%{border-radius:70% 30% 50% 50%/30% 70% 30% 70%;transform:scale(1.08) rotate(5deg)}66%{border-radius:30% 70% 30% 70%/70% 30% 70% 30%;transform:scale(.94) rotate(-3deg)}}
+.mc{position:relative;border-left:4px solid transparent;transition:all .5s cubic-bezier(.16,1,.3,1)}
+.mc:hover{border-left-color:var(--ac);background:rgba(34,197,94,.03)}
+.mc:hover .mg{opacity:1}
+.mg{position:absolute;left:-20px;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:var(--ac);filter:blur(25px);opacity:0;transition:opacity .5s;pointer-events:none}
+.df{display:flex;flex-direction:column;align-items:center;gap:5px;padding:6px 0}
+.df span{width:3px;height:3px;border-radius:50%;background:var(--fc,#22c55e);animation:dd 2s ease-in-out infinite}
+.df span:nth-child(2){animation-delay:.3s}.df span:nth-child(3){animation-delay:.6s}
+@keyframes dd{0%,100%{opacity:.1;transform:translateY(0) scale(.7)}50%{opacity:.7;transform:translateY(4px) scale(1.3)}}
+.sl{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(34,197,94,.25),transparent);animation:sd 10s ease-in-out infinite;pointer-events:none;z-index:2}
+@keyframes sd{0%{top:0;opacity:0}5%{opacity:1}95%{opacity:1}100%{top:100%;opacity:0}}
+.nd{position:absolute;width:4px;height:4px;border-radius:50%;animation:nf 12s ease-in-out infinite;pointer-events:none}
+@keyframes nf{0%,100%{transform:translate(0,0);opacity:.1}25%{transform:translate(12px,-20px);opacity:.35}75%{transform:translate(-10px,-14px);opacity:.2}}
+.drift{animation:drift 10s ease-in-out infinite;opacity:.04;pointer-events:none}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0deg)}25%{transform:translate(15px,-25px) rotate(8deg)}50%{transform:translate(-10px,-15px) rotate(-5deg)}75%{transform:translate(-20px,-30px) rotate(3deg)}}
+.tg{display:inline-flex;align-items:center;gap:3px;padding:3px 8px;border-radius:6px;font-size:10px;font-weight:600;transition:all .25s;backdrop-filter:blur(8px)}
+.tg:hover{transform:translateY(-1px)}
+.pi{transition:all .8s cubic-bezier(.16,1,.3,1)}.group:hover .pi{transform:scale(1.1);opacity:.25}
+.cc{transition:all .4s cubic-bezier(.16,1,.3,1);border:1px solid rgba(255,255,255,.03)}
+.cc:hover{transform:perspective(600px) rotateY(-2deg) translateY(-5px);border-color:rgba(34,197,94,.15);box-shadow:0 15px 40px rgba(34,197,94,.05)}
+.cb{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;backdrop-filter:blur(8px)}
+.mm{transform:translateX(100%);transition:transform .45s cubic-bezier(.16,1,.3,1)}.mm.op{transform:translateX(0)}
+.shimmer{position:relative;overflow:hidden}.shimmer::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(75deg,transparent 35%,rgba(34,197,94,.04) 42%,rgba(34,197,94,.06) 50%,rgba(34,197,94,.04) 58%,transparent 65%);background-size:250% 100%;animation:shm 5s ease-in-out infinite;pointer-events:none}
+@keyframes shm{0%{background-position:250% 0}100%{background-position:-250% 0}}
+.grid-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(34,197,94,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(34,197,94,.015) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at center,black 15%,transparent 65%);pointer-events:none}
+.noise::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.02'/%3E%3C/svg%3E");pointer-events:none;z-index:1;opacity:.25}
+.gp{animation:glow-p 3s ease-in-out infinite}
+@keyframes glow-p{0%,100%{text-shadow:0 0 8px rgba(34,197,94,.2),0 0 20px rgba(34,197,94,.05)}50%{text-shadow:0 0 16px rgba(34,197,94,.4),0 0 40px rgba(34,197,94,.1),0 0 60px rgba(34,197,94,.05)}}
+.scroll-ind{animation:sind 2.5s ease-in-out infinite}
+@keyframes sind{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(10px);opacity:1}}
+.draw{position:relative}.draw::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(34,197,94,.4),rgba(16,185,129,.2),transparent 60%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .5s}.draw:hover::before{opacity:1}
+.ripple{position:relative;overflow:hidden}.ripple::after{content:'';position:absolute;top:50%;left:50%;width:0;height:0;border-radius:50%;background:rgba(34,197,94,.12);transform:translate(-50%,-50%);transition:width .6s ease,height .6s ease,opacity .6s ease;opacity:1}.ripple:active::after{width:400px;height:400px;opacity:0}
+.pulse-ring{position:relative}.pulse-ring::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(34,197,94,.4);animation:pring 2s ease-out infinite}
+@keyframes pring{0%{transform:scale(.8);opacity:1}100%{transform:scale(1.8);opacity:0}}
+.expand{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.16,1,.3,1)}.expand.open{max-height:600px}
+.tag-scroll{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}.tag-scroll::-webkit-scrollbar{display:none}
+</style>
+</head>
+<body class="noise">
+<canvas id="ptc"></canvas>
+<nav id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+<div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+<a href="#hero" class="relative z-10 flex items-center gap-2.5 group"><div class="w-10 h-10 rounded-xl gl flex items-center justify-center group-hover:border-gd/30 transition-all"><iconify-icon icon="lucide:bot" width="18" class="text-gd"></iconify-icon></div><span class="font-sg font-bold text-lg tracking-tight hidden sm:block">Aneeq<span class="text-gd">.</span>ai</span></a>
+<div class="hidden md:flex items-center gap-7">
+<a href="#about" class="nl text-[13px] font-medium text-gray-500 hover:text-white transition-colors">About</a>
+<a href="#skills" class="nl text-[13px] font-medium text-gray-500 hover:text-white transition-colors">Skills</a>
+<a href="#experience" class="nl text-[13px] font-medium text-gray-500 hover:text-white transition-colors">Experience</a>
+<a href="#projects" class="nl text-[13px] font-medium text-gray-500 hover:text-white transition-colors">Projects</a>
+<a href="#certifications" class="nl text-[13px] font-medium text-gray-500 hover:text-white transition-colors">Certs</a>
+<a href="#contact" class="mb glg text-gd text-[13px] font-semibold px-5 py-2.5 rounded-xl hover:bg-gd/10 transition-all ripple">Contact</a>
+</div>
+<button id="menuBtn" class="md:hidden relative z-10 w-10 h-10 flex flex-col items-center justify-center gap-1.5"><span class="ml w-6 h-[2px] bg-white rounded-full transition-all duration-300 origin-center"></span><span class="ml w-6 h-[2px] bg-white rounded-full transition-all duration-300"></span><span class="ml w-4 h-[2px] bg-white rounded-full transition-all duration-300 self-end mr-2"></span></button>
+</div>
+</nav>
+<div id="mobMenu" class="mm fixed inset-0 z-40 bg-base/[.97] backdrop-blur-2xl flex flex-col items-center justify-center gap-6">
+<a href="#about" class="m2 text-2xl font-sg font-bold hover:text-gd transition-colors">About</a>
+<a href="#skills" class="m2 text-2xl font-sg font-bold hover:text-gd transition-colors">Skills</a>
+<a href="#experience" class="m2 text-2xl font-sg font-bold hover:text-gd transition-colors">Experience</a>
+<a href="#projects" class="m2 text-2xl font-sg font-bold hover:text-gd transition-colors">Projects</a>
+<a href="#certifications" class="m2 text-2xl font-sg font-bold hover:text-gd transition-colors">Certs</a>
+<a href="#contact" class="m2 mb glg text-gd text-lg font-semibold px-8 py-3.5 rounded-xl mt-3">Contact</a>
+</div>
+
+<section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden grid-bg">
+<div class="absolute top-1/4 -left-40 w-[500px] h-[500px] bg-gd/[.05] rounded-full blur-[140px] morph"></div>
+<div class="absolute bottom-1/4 -right-40 w-[450px] h-[450px] bg-em/[.04] rounded-full blur-[140px] morph" style="animation-delay:-4s"></div>
+<iconify-icon icon="lucide:bot" width="28" class="absolute top-[18%] left-[8%] text-gd drift"></iconify-icon>
+<iconify-icon icon="lucide:brain" width="24" class="absolute top-[62%] right-[7%] text-em drift" style="animation-delay:-4s"></iconify-icon>
+<iconify-icon icon="lucide:sparkles" width="20" class="absolute bottom-[22%] left-[14%] text-sk drift" style="animation-delay:-7s"></iconify-icon>
+<div class="relative z-10 max-w-7xl mx-auto px-5 w-full">
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+<div class="flex-1 text-center lg:text-left">
+<div class="rv inline-flex items-center gap-2 gl rounded-full px-4 py-2 mb-6 shimmer"><span class="w-2 h-2 bg-gd rounded-full pulse-ring"></span><span class="text-xs font-semibold text-gd tracking-wide">SYSTEM.STATUS: ACTIVE</span></div>
+<h1 class="rv e1 text-4xl sm:text-5xl lg:text-7xl font-sg font-extrabold tracking-tight leading-[1.08] mb-5">Hi, I'm<br><span class="gt gp">Aneeq Imran</span></h1>
+<div class="rv e2 text-xl sm:text-2xl lg:text-3xl font-light text-gray-400 mb-6 h-10"><span id="typed"></span><span class="tc"></span></div>
+<p class="rv e3 text-base sm:text-[17px] text-gray-500 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">Software Engineer specializing in <span class="text-gd font-semibold">AI, Gen AI, RAG</span> and <span class="text-em font-semibold">Agentic Systems</span> — building scalable, production-ready intelligent systems.</p>
+<div class="rv e4 flex flex-wrap gap-4 justify-center lg:justify-start">
+<a href="#projects" class="mb bg-gradient-to-r from-gd to-em text-base font-bold px-8 py-3.5 rounded-xl hover:shadow-2xl hover:shadow-gd/20 flex items-center gap-2.5 transition-all hover:-translate-y-0.5 ripple">View My Work <iconify-icon icon="lucide:arrow-down-right" width="18"></iconify-icon></a>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="mb gl text-white font-semibold px-8 py-3.5 rounded-xl hover:border-gd/20 hover:bg-gd/5 flex items-center gap-2.5 transition-all ripple draw"><iconify-icon icon="lucide:github" width="18"></iconify-icon> GitHub</a>
+</div>
+<div class="rv e5 flex items-center gap-3 mt-10 justify-center lg:justify-start">
+<a href="https://www.linkedin.com/in/aneeq-imran/" target="_blank" class="w-11 h-11 rounded-xl gl flex items-center justify-center hover:bg-gd/10 hover:border-gd/20 transition-all hover:-translate-y-1 draw"><iconify-icon icon="lucide:linkedin" width="17" class="text-gray-400"></iconify-icon></a>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="w-11 h-11 rounded-xl gl flex items-center justify-center hover:bg-gd/10 hover:border-gd/20 transition-all hover:-translate-y-1 draw"><iconify-icon icon="lucide:github" width="17" class="text-gray-400"></iconify-icon></a>
+<a href="mailto:aneeqimran.ai@gmail.com" class="w-11 h-11 rounded-xl gl flex items-center justify-center hover:bg-gd/10 hover:border-gd/20 transition-all hover:-translate-y-1 draw"><iconify-icon icon="lucide:mail" width="17" class="text-gray-400"></iconify-icon></a>
+<a href="tel:+923098038433" class="w-11 h-11 rounded-xl gl flex items-center justify-center hover:bg-gd/10 hover:border-gd/20 transition-all hover:-translate-y-1 draw"><iconify-icon icon="lucide:phone" width="17" class="text-gray-400"></iconify-icon></a>
+</div>
+</div>
+<div class="rs e3 flex-shrink-0">
+<div class="relative">
+<div class="hrr absolute -inset-3 rounded-[2rem] opacity-60"></div>
+<div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[360px] lg:h-[360px] rounded-[1.75rem] overflow-hidden border-2 border-cd/80">
+<img src="https://z-cdn-media.chatglm.cn/files/ece87dc7-a71f-404f-bb2d-45dc6314277a.jpeg?auth_key=1882285632-32226a9d165f4d2e8f6498423acd8cc8-0-3ee011a9518592b9697222dd9a2238b8" alt="Aneeq Imran" class="w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-t from-base/80 via-transparent to-transparent"></div>
+</div>
+<div class="absolute -right-4 top-10 sw gl rounded-xl px-3.5 py-2 flex items-center gap-2 shadow-2xl"><iconify-icon icon="lucide:brain" width="15" class="text-gd"></iconify-icon><span class="text-[11px] font-semibold">AI Engineer</span></div>
+<div class="absolute -left-4 bottom-20 sw2 gl rounded-xl px-3.5 py-2 flex items-center gap-2 shadow-2xl"><iconify-icon icon="lucide:bot" width="15" class="text-em"></iconify-icon><span class="text-[11px] font-semibold">Agentic AI</span></div>
+<div class="absolute right-10 -bottom-3 sw3 gl rounded-xl px-3.5 py-2 flex items-center gap-2 shadow-2xl"><iconify-icon icon="lucide:sparkles" width="15" class="text-vt"></iconify-icon><span class="text-[11px] font-semibold">Gen AI</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 scroll-ind z-10"><span class="text-[10px] text-gray-700 font-semibold uppercase tracking-widest">Scroll</span><iconify-icon icon="lucide:chevrons-down" width="18" class="text-gd/50"></iconify-icon></div>
+</section>
+
+<section id="about" class="relative z-10 py-24 px-5">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-gd mb-3 block">// About Me</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight">Passionate About <span class="gt">Intelligent Systems</span></h2></div>
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="rl"><p class="text-gray-300 text-lg leading-relaxed mb-5">I'm a Software Engineer from <strong class="text-white">Lahore, Pakistan</strong>, BS Computer Engineering from <strong class="text-white">UET Lahore</strong> (CGPA: 3.45). I build production-ready AI systems with real industry impact.</p><p class="text-gray-600 leading-relaxed mb-8">From Agentic AI workflows to RAG-based screening platforms and industrial computer vision systems — I architect end-to-end intelligent solutions. I hold <strong class="text-gray-400">14 certifications</strong> from Google, Anthropic, Databricks, IBM, AWS & Udacity.</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="text-center p-4 gl rounded-2xl hover:border-gd/15 transition-all shimmer draw"><div class="text-2xl sm:text-3xl font-extrabold text-gd"><span class="ctr" data-target="6">0</span>+</div><div class="text-[10px] text-gray-600 mt-1 uppercase tracking-wider font-semibold">Projects</div></div>
+<div class="text-center p-4 gl rounded-2xl hover:border-em/15 transition-all shimmer draw"><div class="text-2xl sm:text-3xl font-extrabold text-em"><span class="ctr" data-target="3">0</span></div><div class="text-[10px] text-gray-600 mt-1 uppercase tracking-wider font-semibold">Positions</div></div>
+<div class="text-center p-4 gl rounded-2xl hover:border-vt/15 transition-all shimmer draw"><div class="text-2xl sm:text-3xl font-extrabold text-vt"><span class="ctr" data-target="14">14</span></div><div class="text-[10px] text-gray-600 mt-1 uppercase tracking-wider font-semibold">Certificates</div></div>
+<div class="text-center p-4 gl rounded-2xl hover:border-rs/15 transition-all shimmer draw"><div class="text-2xl sm:text-3xl font-extrabold text-rs"><span class="ctr" data-target="33">0</span>+</div><div class="text-[10px] text-gray-600 mt-1 uppercase tracking-wider font-semibold">Skills</div></div>
+</div></div>
+<div class="rr"><div class="grid grid-cols-2 gap-4">
+<div class="hc gl rounded-2xl p-6 shimmer draw"><div class="w-12 h-12 rounded-xl bg-gd/10 flex items-center justify-center mb-4"><iconify-icon icon="lucide:brain" width="24" class="text-gd"></iconify-icon></div><h4 class="font-bold text-sm mb-1.5">Gen AI & LLMs</h4><p class="text-xs text-gray-600 leading-relaxed">GPT, Claude, Gemini, LLaMA</p></div>
+<div class="hc gl rounded-2xl p-6 shimmer draw"><div class="w-12 h-12 rounded-xl bg-em/10 flex items-center justify-center mb-4"><iconify-icon icon="lucide:bot" width="24" class="text-em"></iconify-icon></div><h4 class="font-bold text-sm mb-1.5">Agentic AI</h4><p class="text-xs text-gray-600 leading-relaxed">LangGraph, CrewAI, n8n</p></div>
+<div class="hc gl rounded-2xl p-6 shimmer draw"><div class="w-12 h-12 rounded-xl bg-vt/10 flex items-center justify-center mb-4"><iconify-icon icon="lucide:database" width="24" class="text-vt"></iconify-icon></div><h4 class="font-bold text-sm mb-1.5">RAG Systems</h4><p class="text-xs text-gray-600 leading-relaxed">Vector DBs, semantic search</p></div>
+<div class="hc gl rounded-2xl p-6 shimmer draw"><div class="w-12 h-12 rounded-xl bg-rs/10 flex items-center justify-center mb-4"><iconify-icon icon="lucide:eye" width="24" class="text-rs"></iconify-icon></div><h4 class="font-bold text-sm mb-1.5">Computer Vision</h4><p class="text-xs text-gray-600 leading-relaxed">OpenCV, image processing</p></div>
+</div></div>
+</div>
+</div>
+</section>
+
+<section id="skills" class="relative z-10 py-24 px-5 bg-sf/50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-em mb-3 block">// Technical Skills</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight">My <span class="gt">Tech Arsenal</span> — <span class="text-gd"></span></h2></div>
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+<div class="rv rs"><div class="gls rounded-3xl p-6 sm:p-8 shimmer"><canvas id="radar" width="500" height="500" class="w-full max-w-[500px] mx-auto"></canvas></div></div>
+<div class="rr">
+<div class="rv e1 hc gl rounded-2xl p-6 mb-4 shimmer draw"><div class="flex items-center gap-3 mb-5"><div class="w-10 h-10 rounded-lg bg-gd/10 flex items-center justify-center"><iconify-icon icon="lucide:code-2" width="20" class="text-gd"></iconify-icon></div><h3 class="font-sg font-bold">Languages & Databases</h3></div><div class="flex flex-wrap gap-1.5"><span class="tg bg-gd/10 text-gd border border-gd/15">Python</span><span class="tg bg-gd/10 text-gd border border-gd/15">SQL</span><span class="tg bg-gd/10 text-gd border border-gd/15">Query Writing</span><span class="tg bg-gd/10 text-gd border border-gd/15">RDBMS</span><span class="tg bg-gd/10 text-gd border border-gd/15">SQLite</span></div></div>
+<div class="rv e2 hc gl rounded-2xl p-6 mb-4 shimmer draw"><div class="flex items-center gap-3 mb-5"><div class="w-10 h-10 rounded-lg bg-em/10 flex items-center justify-center"><iconify-icon icon="lucide:brain" width="20" class="text-em"></iconify-icon></div><h3 class="font-sg font-bold">AI / ML / Gen AI</h3></div><div class="flex flex-wrap gap-1.5"><span class="tg bg-em/10 text-em border border-em/15">LangChain</span><span class="tg bg-em/10 text-em border border-em/15">LangGraph</span><span class="tg bg-em/10 text-em border border-em/15">CrewAI</span><span class="tg bg-em/10 text-em border border-em/15">RAG</span><span class="tg bg-em/10 text-em border border-em/15">Prompt Engineering</span><span class="tg bg-em/10 text-em border border-em/15">NLP</span><span class="tg bg-em/10 text-em border border-em/15">Gen AI</span><span class="tg bg-em/10 text-em border border-em/15">Machine Learning</span><span class="tg bg-em/10 text-em border border-em/15">Deep Learning</span><span class="tg bg-em/10 text-em border border-em/15">Foundation Models</span><span class="tg bg-em/10 text-em border border-em/15">Gen AI Dev Life Cycle</span><span class="tg bg-em/10 text-em border border-em/15">AI Based Solutions</span><span class="tg bg-em/10 text-em border border-em/15">Agentic AI Dev</span><span class="tg bg-em/10 text-em border border-em/15">Chatbot Dev</span><span class="tg bg-em/10 text-em border border-em/15">AI</span></div></div>
+<div class="rv e3 hc gl rounded-2xl p-6 mb-4 shimmer draw"><div class="flex items-center gap-3 mb-5"><div class="w-10 h-10 rounded-lg bg-vt/10 flex items-center justify-center"><iconify-icon icon="lucide:wrench" width="20" class="text-vt"></iconify-icon></div><h3 class="font-sg font-bold">Frameworks & Tools</h3></div><div class="flex flex-wrap gap-1.5"><span class="tg bg-vt/10 text-vt border border-vt/15">FastAPI</span><span class="tg bg-vt/10 text-vt border border-vt/15">Flask</span><span class="tg bg-vt/10 text-vt border border-vt/15">n8n</span><span class="tg bg-vt/10 text-vt border border-vt/15">Docker</span><span class="tg bg-vt/10 text-vt border border-vt/15">OpenCV</span><span class="tg bg-vt/10 text-vt border border-vt/15">Flutter</span><span class="tg bg-vt/10 text-vt border border-vt/15">Backend</span><span class="tg bg-vt/10 text-vt border border-vt/15">SDLC</span></div></div>
+<div class="rv e4 hc gl rounded-2xl p-6 shimmer draw"><div class="flex items-center gap-3 mb-5"><div class="w-10 h-10 rounded-lg bg-rs/10 flex items-center justify-center"><iconify-icon icon="lucide:shield-check" width="20" class="text-rs"></iconify-icon></div><h3 class="font-sg font-bold">LLM Platforms & Ethics</h3></div><div class="flex flex-wrap gap-1.5"><span class="tg bg-rs/10 text-rs border border-rs/15">Anthropic Claude</span><span class="tg bg-rs/10 text-rs border border-rs/15">Claude Skills</span><span class="tg bg-rs/10 text-rs border border-rs/15">4D Frameworks</span><span class="tg bg-rs/10 text-rs border border-rs/15">AI Ethics</span><span class="tg bg-rs/10 text-rs border border-rs/15">Responsible AI</span><span class="tg bg-rs/10 text-rs border border-rs/15">Gen AI Tools</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience" class="relative z-10 py-24 px-5 overflow-hidden">
+<div class="nd bg-gd/30" style="top:15%;left:5%"></div><div class="nd bg-em/30" style="top:50%;right:4%;animation-delay:-4s"></div><div class="sl"></div>
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-em mb-3 block">// Professional Experience</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight">Mission <span class="gt">Log</span></h2></div>
+<div class="space-y-2">
+
+<div class="rv mc gl rounded-2xl p-6 sm:p-8 shimmer" style="--ac:#22c55e">
+<div class="mg" style="--ac:#22c55e"></div>
+<div class="flex flex-wrap items-center gap-3 mb-4"><div class="flex items-center gap-2 gl rounded-full px-3 py-1 border-gd/20"><span class="w-2 h-2 bg-gd rounded-full pulse-ring"></span><span class="text-[10px] font-bold uppercase tracking-wider text-gd">Current Role</span></div><span class="text-[10px] text-gray-700">Jan 2026 → Present · 6 mos</span></div>
+<h3 class="text-xl font-sg font-extrabold mb-0.5">AI Engineer</h3><p class="text-gd font-semibold text-sm mb-1">Symtera Technologies · Internship</p><p class="text-gray-700 text-xs mb-4">Punjab, Pakistan · On-site</p>
+<div class="space-y-2.5">
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Built scalable Python-based data pipelines for cleaning, validation, and processing of structured and semi-structured data</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Developed automated web scraping framework using Requests and BeautifulSoup for large-scale data collection</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Engineered LinkedIn Lead Generation & Outreach Automation with AI-driven enrichment, scoring, and personalized messaging</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Designed Agentic AI workflows using LangChain, LangGraph, and n8n with multi-step reasoning and autonomous decision-making</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Built RAG-based Resume Screening System using embeddings and vector databases for semantic search accuracy</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Optimized Gen AI pipelines through advanced prompt engineering, response evaluation, and LLM orchestration</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-gd flex-shrink-0 mt-0.5"></iconify-icon>Contributed to AI system architecture and API integration for scalable deployment</p>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-5"><span class="tg bg-gd/10 text-gd border border-gd/15">Python</span><span class="tg bg-gd/10 text-gd border border-gd/15">LangChain</span><span class="tg bg-gd/10 text-gd border border-gd/15">LangGraph</span><span class="tg bg-gd/10 text-gd border border-gd/15">CrewAI</span><span class="tg bg-gd/10 text-gd border border-gd/15">n8n</span><span class="tg bg-gd/10 text-gd border border-gd/15">RAG</span><span class="tg bg-gd/10 text-gd border border-gd/15">FastAPI</span><span class="tg bg-gd/10 text-gd border border-gd/15">+13 skills</span></div>
+</div>
+<div class="df" style="--fc:#22c55e"><span></span><span></span><span></span></div>
+
+<div class="rv e2 mc gl rounded-2xl p-6 sm:p-8 shimmer" style="--ac:#10b981">
+<div class="mg" style="--ac:#10b981"></div>
+<div class="flex flex-wrap items-center gap-3 mb-4"><div class="flex items-center gap-2 gl rounded-full px-3 py-1"><span class="w-2 h-2 bg-gray-600 rounded-full"></span><span class="text-[10px] font-bold uppercase tracking-wider text-gray-500">Completed</span></div><span class="text-[10px] text-gray-700">Jun 2025 → Sep 2025 · 4 mos</span></div>
+<h3 class="text-xl font-sg font-extrabold mb-0.5">GEN AI Engineer</h3><p class="text-em font-semibold text-sm mb-1">MindRind · Internship</p><p class="text-gray-700 text-xs mb-4">Lahore, Punjab, Pakistan · On-site</p>
+<div class="space-y-2.5">
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-em flex-shrink-0 mt-0.5"></iconify-icon>Developed AI-powered chatbots and agents using Python, LangChain, LangGraph, CrewAI, and LLMs</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-em flex-shrink-0 mt-0.5"></iconify-icon>Designed RAG pipelines with vector databases for contextual understanding and response relevance</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-em flex-shrink-0 mt-0.5"></iconify-icon>Created intelligent AI agents using LangChain's modular framework and node-based LangGraph for multi-step reasoning</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-em flex-shrink-0 mt-0.5"></iconify-icon>Built Flask/FastAPI endpoints for chatbot services and orchestration</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-em flex-shrink-0 mt-0.5"></iconify-icon>Containerized applications using Docker for scalable and portable deployment</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-em flex-shrink-0 mt-0.5"></iconify-icon>Contributed to prompt engineering, chain construction, and custom tools for LLM-based reasoning</p>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-5"><span class="tg bg-em/10 text-em border border-em/15">LangChain</span><span class="tg bg-em/10 text-em border border-em/15">LangGraph</span><span class="tg bg-em/10 text-em border border-em/15">CrewAI</span><span class="tg bg-em/10 text-em border border-em/15">RAG</span><span class="tg bg-em/10 text-em border border-em/15">Flask</span><span class="tg bg-em/10 text-em border border-em/15">Docker</span><span class="tg bg-em/10 text-em border border-em/15">+5 skills</span></div>
+</div>
+<div class="df" style="--fc:#10b981"><span></span><span></span><span></span></div>
+
+<div class="rv e4 mc gl rounded-2xl p-6 sm:p-8 shimmer" style="--ac:#059669">
+<div class="mg" style="--ac:#059669"></div>
+<div class="flex flex-wrap items-center gap-3 mb-4"><div class="flex items-center gap-2 gl rounded-full px-3 py-1"><span class="w-2 h-2 bg-gray-600 rounded-full"></span><span class="text-[10px] font-bold uppercase tracking-wider text-gray-500">Completed</span></div><span class="text-[10px] text-gray-700">Oct 2024 → May 2025 · 8 mos</span></div>
+<h3 class="text-xl font-sg font-extrabold mb-0.5">System Engineer</h3><p class="text-vt font-semibold text-sm mb-1">Siddiq Leather Works · Full-time</p><p class="text-gray-700 text-xs mb-4">Lahore, Punjab, Pakistan · On-site</p>
+<div class="space-y-2.5">
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-vt flex-shrink-0 mt-0.5"></iconify-icon>Designed and developed vision-based system for measuring irregular leather sheet areas using Python and OpenCV</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-vt flex-shrink-0 mt-0.5"></iconify-icon>Implemented pixel-to-real-world scaling using calibration grid methodology</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-vt flex-shrink-0 mt-0.5"></iconify-icon>Built real-time object detection and tracking pipeline using live camera feed (IP webcam integration)</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-vt flex-shrink-0 mt-0.5"></iconify-icon>Designed batch-wise reporting system for industrial production (25 items per batch)</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-vt flex-shrink-0 mt-0.5"></iconify-icon>Developed data storage architecture using SQLite and structured system workflow for Object ID generation</p>
+<p class="flex gap-2.5 text-sm text-gray-300 leading-relaxed"><iconify-icon icon="lucide:chevron-right" width="14" class="text-vt flex-shrink-0 mt-0.5"></iconify-icon>Contributed to UI/UX design and system flow planning for Flutter-based mobile application</p>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-5"><span class="tg bg-vt/10 text-vt border border-vt/15">Python</span><span class="tg bg-vt/10 text-vt border border-vt/15">OpenCV</span><span class="tg bg-vt/10 text-vt border border-vt/15">Flutter</span><span class="tg bg-vt/10 text-vt border border-vt/15">SQLite</span><span class="tg bg-vt/10 text-vt border border-vt/15">System Design</span><span class="tg bg-vt/10 text-vt border border-vt/15">+10 skills</span></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="projects" class="relative z-10 py-24 px-5 bg-sf/50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-rs mb-3 block">// Deployed Systems</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight">What I've <span class="gt">Built</span></h2></div>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="rv e1 hc gl rounded-2xl overflow-hidden group md:col-span-2 shimmer draw">
+<div class="relative h-52 sm:h-56 bg-gradient-to-br from-gd/10 via-cd to-em/5 flex items-center justify-center overflow-hidden"><div class="pi absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=500&fit=crop')] bg-cover bg-center opacity-25"></div><div class="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent"></div><div class="relative z-10 text-center"><iconify-icon icon="lucide:users" width="52" class="text-gd mb-2"></iconify-icon><span class="text-sm font-semibold text-gd font-mono">AGENT_SYSTEM_V1</span></div><div class="absolute top-4 right-4 gl rounded-full text-em text-[10px] font-bold px-3 py-1 border-em/20 uppercase tracking-wider">Featured</div></div>
+<div class="p-6 sm:p-8"><h3 class="text-xl sm:text-2xl font-sg font-extrabold mb-2">LinkedIn Leads Generation & Outreach Automation</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Agentic AI pipeline with LangChain & LangGraph. Lead Finder, Enrichment, Outreach, Follow-up Agents. n8n automation, AI scoring via OpenRouter.</p>
+<div class="flex flex-wrap gap-1.5 mb-5"><span class="tg bg-gd/10 text-gd border border-gd/15">LangGraph</span><span class="tg bg-gd/10 text-gd border border-gd/15">FastAPI</span><span class="tg bg-gd/10 text-gd border border-gd/15">n8n</span><span class="tg bg-gd/10 text-gd border border-gd/15">OpenRouter</span></div>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-gd hover:text-gr transition-colors"><iconify-icon icon="lucide:github" width="15"></iconify-icon> GitHub</a></div>
+</div>
+<div class="rv e2 hc gl rounded-2xl overflow-hidden group shimmer draw">
+<div class="relative h-48 bg-gradient-to-br from-em/10 via-cd to-gd/5 flex items-center justify-center overflow-hidden"><div class="pi absolute inset-0 bg-[url('https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop')] bg-cover bg-center opacity-25"></div><div class="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent"></div><div class="relative z-10 text-center"><iconify-icon icon="lucide:share-2" width="44" class="text-em mb-2"></iconify-icon><span class="text-xs font-semibold text-em font-mono">CONTENT_AGENT</span></div></div>
+<div class="p-6"><h3 class="text-lg font-sg font-extrabold mb-2">Multi-Platform AI Content Agent</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">n8n agent for LinkedIn, Facebook & Instagram. Reduces manual effort 90%+.</p>
+<div class="flex flex-wrap gap-1.5 mb-4"><span class="tg bg-em/10 text-em border border-em/15">n8n</span><span class="tg bg-em/10 text-em border border-em/15">Gen AI</span><span class="tg bg-em/10 text-em border border-em/15">LinkedIn API</span><span class="tg bg-em/10 text-em border border-em/15">Meta API</span></div>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-em"><iconify-icon icon="lucide:github" width="15"></iconify-icon> GitHub</a></div>
+</div>
+<div class="rv e3 hc gl rounded-2xl overflow-hidden group shimmer draw">
+<div class="relative h-48 bg-gradient-to-br from-vt/10 via-cd to-rs/5 flex items-center justify-center overflow-hidden"><div class="pi absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop')] bg-cover bg-center opacity-25"></div><div class="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent"></div><div class="relative z-10 text-center"><iconify-icon icon="lucide:file-search" width="44" class="text-vt mb-2"></iconify-icon><span class="text-xs font-semibold text-vt font-mono">RESUME_AI</span></div></div>
+<div class="p-6"><h3 class="text-lg font-sg font-extrabold mb-2">AI Resume Screening System</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Multi-format screening with Gemini Flash, 20+ APIs, React. Reduced hiring time 70%.</p>
+<div class="flex flex-wrap gap-1.5 mb-4"><span class="tg bg-vt/10 text-vt border border-vt/15">FastAPI</span><span class="tg bg-vt/10 text-vt border border-vt/15">React</span><span class="tg bg-vt/10 text-vt border border-vt/15">PostgreSQL</span><span class="tg bg-vt/10 text-vt border border-vt/15">Gemini</span></div>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-vt"><iconify-icon icon="lucide:github" width="15"></iconify-icon> GitHub</a></div>
+</div>
+<div class="rv e1 hc gl rounded-2xl overflow-hidden group shimmer draw">
+<div class="relative h-48 bg-gradient-to-br from-rs/10 via-cd to-gd/5 flex items-center justify-center overflow-hidden"><div class="pi absolute inset-0 bg-[url('https://images.unsplash.com/photo-1676299081847-824916de030a?w=600&h=400&fit=crop')] bg-cover bg-center opacity-25"></div><div class="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent"></div><div class="relative z-10 text-center"><iconify-icon icon="lucide:message-square" width="44" class="text-rs mb-2"></iconify-icon><span class="text-xs font-semibold text-rs font-mono">RAG_CHATBOT</span></div></div>
+<div class="p-6"><h3 class="text-lg font-sg font-extrabold mb-2">Symtera Company Chatbot</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">RAG support chatbot with multi-turn conversation, vector DB, FastAPI, React.</p>
+<div class="flex flex-wrap gap-1.5 mb-4"><span class="tg bg-rs/10 text-rs border border-rs/15">RAG</span><span class="tg bg-rs/10 text-rs border border-rs/15">FastAPI</span><span class="tg bg-rs/10 text-rs border border-rs/15">LLMs</span><span class="tg bg-rs/10 text-rs border border-rs/15">React</span></div>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-rs"><iconify-icon icon="lucide:github" width="15"></iconify-icon> GitHub</a></div>
+</div>
+<div class="rv e2 hc gl rounded-2xl overflow-hidden group shimmer draw">
+<div class="relative h-48 bg-gradient-to-br from-sk/10 via-cd to-vt/5 flex items-center justify-center overflow-hidden"><div class="pi absolute inset-0 bg-[url('https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&h=400&fit=crop')] bg-cover bg-center opacity-25"></div><div class="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent"></div><div class="relative z-10 text-center"><iconify-icon icon="lucide:pen-tool" width="44" class="text-sk mb-2"></iconify-icon><span class="text-xs font-semibold text-sk font-mono">WRITELY_AI</span></div></div>
+<div class="p-6"><h3 class="text-lg font-sg font-extrabold mb-2">Writely.AI — Thesis Writer</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Academic writing with RAG, web search, multi-LLM (GPT, Gemini, LLaMA).</p>
+<div class="flex flex-wrap gap-1.5 mb-4"><span class="tg bg-sk/10 text-sk border border-sk/15">RAG</span><span class="tg bg-sk/10 text-sk border border-sk/15">FastAPI</span><span class="tg bg-sk/10 text-sk border border-sk/15">Multi-LLM</span></div>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-sk"><iconify-icon icon="lucide:github" width="15"></iconify-icon> GitHub</a></div>
+</div>
+<div class="rv e3 hc gl rounded-2xl overflow-hidden group md:col-span-2 shimmer draw">
+<div class="grid md:grid-cols-2"><div class="relative h-48 md:h-full min-h-[200px] bg-gradient-to-br from-gd/10 via-cd to-em/10 flex items-center justify-center overflow-hidden"><div class="pi absolute inset-0 bg-[url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800&h=500&fit=crop')] bg-cover bg-center opacity-25"></div><div class="absolute inset-0 bg-gradient-to-r from-transparent to-base/80"></div><div class="relative z-10 text-center"><iconify-icon icon="lucide:scan" width="52" class="text-gd mb-2"></iconify-icon><span class="text-sm font-semibold text-gd font-mono">CV_VISION</span></div></div>
+<div class="p-6 sm:p-8"><h3 class="text-xl font-sg font-extrabold mb-2">Leather Surface Area Measurement</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">OpenCV with 97% accuracy. PyQt5 + Flutter apps. Deployed at Siddiq Leather Works. SDGs 8, 9, 12, 17.</p>
+<div class="flex flex-wrap gap-1.5 mb-5"><span class="tg bg-gd/10 text-gd border border-gd/15">OpenCV</span><span class="tg bg-gd/10 text-gd border border-gd/15">Python</span><span class="tg bg-gd/10 text-gd border border-gd/15">Flutter</span><span class="tg bg-gd/10 text-gd border border-gd/15">SQLite</span><span class="tg bg-gd/10 text-gd border border-gd/15">System Design</span></div>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-gd"><iconify-icon icon="lucide:github" width="15"></iconify-icon> GitHub</a></div></div>
+</div>
+</div>
+<div class="rv text-center mt-12"><a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="mb gl text-white font-semibold px-8 py-3.5 rounded-xl hover:border-gd/20 hover:bg-gd/5 transition-all inline-flex items-center gap-2.5 ripple draw"><iconify-icon icon="lucide:github" width="20"></iconify-icon> All Repositories <iconify-icon icon="lucide:arrow-right" width="16"></iconify-icon></a></div>
+</div>
+</section>
+
+<section id="certifications" class="relative z-10 py-24 px-5">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-rs mb-3 block">// Credentials</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight"><span class="ctr" data-target="14">14</span> <span class="gt">Certificates</span></h2></div>
+
+<!-- Udacity Featured -->
+<div class="rv mb-6"><div class="gls rounded-2xl overflow-hidden border-gd/20 relative"><div class="absolute inset-0 bg-gradient-to-r from-gd/5 via-transparent to-gd/5 pointer-events:none"></div>
+<div class="relative gl rounded-t-2xl px-6 sm:px-8 py-4 flex flex-wrap items-center gap-3 border-b border-white/[.04]"><div class="cb bg-gd/15 border border-gd/20"><iconify-icon icon="lucide:award" width="20" class="text-gd"></iconify-icon></div><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-wider text-gd bg-gd/10 px-2.5 py-0.5 rounded-full">Featured · Latest</span></div>
+<a href="https://www.udacity.com/certificate/e/4e3fdf9a-37c8-11f1-85d8-53e2c8daaddd" target="_blank" class="flex items-center gap-1.5 text-xs font-bold text-gd hover:text-gr transition-colors"><iconify-icon icon="lucide:external-link" width="12"></iconify-icon> Verify</a></div>
+<div class="relative p-6 sm:p-8"><h3 class="text-2xl font-sg font-extrabold mb-2">AWS AI Practitioner Challenge</h3><p class="text-gray-600 text-sm mb-3">Udacity · AWS AI & ML Scholars · <strong class="text-gd">Jun 2026</strong></p><p class="text-gray-500 text-sm leading-relaxed mb-5">Comprehensive AI certification covering AI fundamentals, generative AI, machine learning, foundation models, and real-world application development.</p>
+<div class="flex flex-wrap gap-1.5"><span class="tg bg-gd/10 text-gd border border-gd/15">AI</span><span class="tg bg-gd/10 text-gd border border-gd/15">Gen AI</span><span class="tg bg-gd/10 text-gd border border-gd/15">ML</span><span class="tg bg-gd/10 text-gd border border-gd/15">Foundation Models</span><span class="tg bg-gd/10 text-gd border border-gd/15">+7 skills</span></div></div></div></div>
+
+<!-- Google AI Essentials Specialization -->
+<div class="rv mb-6"><div class="hc gl rounded-2xl overflow-hidden border-gd/10 shimmer draw">
+<div class="gl px-6 sm:px-8 py-4 flex flex-wrap items-center gap-3 border-b border-white/[.04]"><div class="cb bg-gd/10 border border-gd/15"><iconify-icon icon="lucide:trophy" width="20" class="text-gd"></iconify-icon></div><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-wider text-gd bg-gd/10 px-2.5 py-0.5 rounded-full">Specialization · 5 Courses</span></div>
+<a href="https://coursera.org/verify/specialization/0BNE9UMGNHHP" target="_blank" class="flex items-center gap-1.5 text-xs font-semibold text-gd hover:text-gr transition-colors"><iconify-icon icon="lucide:external-link" width="12"></iconify-icon> Verify</a></div>
+<div class="p-6 sm:p-8"><h3 class="text-xl font-sg font-extrabold mb-2">Google AI Essentials</h3><p class="text-gray-600 text-sm mb-4">Coursera · Apr 2026 · Signed by Amanda Brophy, Google</p>
+<div class="grid grid-cols-5 gap-2 mb-5"><div class="gl rounded-xl p-2.5 text-center"><iconify-icon icon="lucide:book-open" width="16" class="text-gd mb-1"></iconify-icon><p class="text-[10px] font-semibold text-gray-300">Intro AI</p></div><div class="gl rounded-xl p-2.5 text-center"><iconify-icon icon="lucide:zap" width="16" class="text-em mb-1"></iconify-icon><p class="text-[10px] font-semibold text-gray-300">Productivity</p></div><div class="gl rounded-xl p-2.5 text-center"><iconify-icon icon="lucide:sparkles" width="16" class="text-vt mb-1"></iconify-icon><p class="text-[10px] font-semibold text-gray-300">Prompting</p></div><div class="gl rounded-xl p-2.5 text-center"><iconify-icon icon="lucide:shield-check" width="16" class="text-rs mb-1"></iconify-icon><p class="text-[10px] font-semibold text-gray-300">Responsible</p></div><div class="gl rounded-xl p-2.5 text-center"><iconify-icon icon="lucide:trending-up" width="16" class="text-sk mb-1"></iconify-icon><p class="text-[10px] font-semibold text-gray-300">AI Curve</p></div></div>
+<div class="flex flex-wrap gap-1.5"><span class="tg bg-gd/10 text-gd border border-gd/15">AI</span><span class="tg bg-gd/10 text-gd border border-gd/15">Prompt Eng</span><span class="tg bg-gd/10 text-gd border border-gd/15">Gen AI</span><span class="tg bg-gd/10 text-gd border border-gd/15">NLP</span><span class="tg bg-gd/10 text-gd border border-gd/15">Responsible AI</span></div></div></div></div>
+
+<!-- Anthropic Certificates -->
+<div class="grid sm:grid-cols-2 gap-4 mb-4">
+<div class="rv e1 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-gd/10 border border-gd/15"><iconify-icon icon="lucide:brain" width="18" class="text-gd"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gd mb-0.5">Anthropic</p><h4 class="text-sm font-sg font-extrabold leading-tight">Claude 101</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Jun 2026 · ID: 5fndprtt9xjq</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-gd/10 text-gd border border-gd/15">Claude Skills</span><span class="tg bg-gd/10 text-gd border border-gd/15">Anthropic Claude</span><span class="tg bg-gd/10 text-gd border border-gd/15">+1 skill</span></div></div>
+<div class="rv e2 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-em/10 border border-em/15"><iconify-icon icon="lucide:layers" width="18" class="text-em"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-em mb-0.5">Anthropic</p><h4 class="text-sm font-sg font-extrabold leading-tight">AI Fluency Frameworks & Foundations</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Jun 2026 · ID: t573wpjovy4i</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-em/10 text-em border border-em/15">4D Frameworks</span><span class="tg bg-em/10 text-em border border-em/15">AI Ethics</span><span class="tg bg-em/10 text-em border border-em/15">+3 skills</span></div></div>
+</div>
+
+<!-- Google AI Fundamentals -->
+<div class="rv mb-4"><div class="cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-gd/10 border border-gd/15"><iconify-icon icon="lucide:cpu" width="18" class="text-gd"></iconify-icon></div><div class="flex-1"><p class="text-[10px] font-bold uppercase tracking-wider text-gd mb-0.5">Google</p><h4 class="text-sm font-sg font-extrabold leading-tight">AI Fundamentals</h4></div><p class="text-[11px] text-gray-700">Jun 2026 · ID: 6R0F72W36LCV</p></div></div></div>
+
+<!-- Individual certs grid -->
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+<div class="rv e1 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-vt/10 border border-vt/15"><iconify-icon icon="lucide:bot" width="18" class="text-vt"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-vt mb-0.5">Databricks</p><h4 class="text-sm font-sg font-extrabold leading-tight">Accredited AI Agent Fundamentals</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Feb 2026</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-vt/10 text-vt border border-vt/15">Agentic AI Dev</span><span class="tg bg-vt/10 text-vt border border-vt/15">AI Based Solutions</span></div><a href="https://credentials.databricks.com/12a2cb90-2717-4c52-a2c8-b3b3a64c8b28#acc.W3kXJ0Sd" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-vt hover:text-vt/80 transition-colors"><iconify-icon icon="lucide:external-link" width="11"></iconify-icon> Verify</a></div>
+
+<div class="rv e2 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-rs/10 border border-rs/15"><iconify-icon icon="lucide:database" width="18" class="text-rs"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-rs mb-0.5">IBM</p><h4 class="text-sm font-sg font-extrabold leading-tight">Introduction to RDBMS</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Jan 2024</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-rs/10 text-rs border border-rs/15">SQL</span><span class="tg bg-rs/10 text-rs border border-rs/15">Query Writing</span></div></div>
+
+<div class="rv e3 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-gd/10 border border-gd/15"><iconify-icon icon="lucide:book-open" width="18" class="text-gd"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Coursera · Google</p><h4 class="text-sm font-sg font-extrabold leading-tight">Introduction to AI</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Apr 2026</p><a href="https://coursera.org/verify/OWL71VG1J0S8" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-gd hover:text-gr transition-colors"><iconify-icon icon="lucide:external-link" width="11"></iconify-icon> Verify</a></div>
+
+<div class="rv e1 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-em/10 border border-em/15"><iconify-icon icon="lucide:zap" width="18" class="text-em"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Coursera · Google</p><h4 class="text-sm font-sg font-extrabold leading-tight">Maximize Productivity With AI Tools</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Apr 2026</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-em/10 text-em border border-em/15">AI</span><span class="tg bg-em/10 text-em border border-em/15">Gen AI Tools</span></div><a href="https://coursera.org/verify/X0EN4S8QU4I4" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-em hover:text-em/80 transition-colors"><iconify-icon icon="lucide:external-link" width="11"></iconify-icon> Verify</a></div>
+
+<div class="rv e2 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-vt/10 border border-vt/15"><iconify-icon icon="lucide:sparkles" width="18" class="text-vt"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Coursera · Google</p><h4 class="text-sm font-sg font-extrabold leading-tight">Discover the Art of Prompting</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Apr 2026</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-vt/10 text-vt border border-vt/15">Prompt Eng</span><span class="tg bg-vt/10 text-vt border border-vt/15">NLP</span><span class="tg bg-vt/10 text-vt border border-vt/15">+2 skills</span></div><a href="https://coursera.org/verify/RN9KLV74756L" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-vt hover:text-vt/80 transition-colors"><iconify-icon icon="lucide:external-link" width="11"></iconify-icon> Verify</a></div>
+
+<div class="rv e3 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-rs/10 border border-rs/15"><iconify-icon icon="lucide:shield-check" width="18" class="text-rs"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Coursera · Google</p><h4 class="text-sm font-sg font-extrabold leading-tight">Use AI Responsibly</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Apr 2026</p><div class="flex flex-wrap gap-1.5 mb-2"><span class="tg bg-rs/10 text-rs border border-rs/15">AI Ethics</span><span class="tg bg-rs/10 text-rs border border-rs/15">Responsible AI</span><span class="tg bg-rs/10 text-rs border border-rs/15">+2 skills</span></div><a href="https://coursera.org/verify/9ES3SNYLSNU3" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-rs hover:text-rs/80 transition-colors"><iconify-icon icon="lucide:external-link" width="11"></iconify-icon> Verify</a></div>
+</div>
+
+<div class="grid sm:grid-cols-3 gap-4">
+<div class="rv e1 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-sk/10 border border-sk/15"><iconify-icon icon="lucide:trending-up" width="18" class="text-sk"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Coursera · Google</p><h4 class="text-sm font-sg font-extrabold leading-tight">Stay Ahead of AI Curve</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Apr 2026</p><a href="https://coursera.org/verify/2QY2RL0ZMEZN" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-sk hover:text-sk/80 transition-colors"><iconify-icon icon="lucide:external-link" width="11"></iconify-icon> Verify</a></div>
+<div class="rv e2 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-gd/10 border border-gd/15"><iconify-icon icon="lucide:rocket" width="18" class="text-gd"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gd mb-0.5">Udacity · AWS</p><h4 class="text-sm font-sg font-extrabold leading-tight">Build AI Productivity App</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Project Badge · Jun 2026</p></div>
+<div class="rv e3 cc gl rounded-2xl p-5 shimmer draw"><div class="flex items-start gap-3 mb-3"><div class="cb bg-em/10 border border-em/15"><iconify-icon icon="lucide:trophy" width="18" class="text-em"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-em mb-0.5">Udacity · AWS</p><h4 class="text-sm font-sg font-extrabold leading-tight">AWS AI & ML Scholars 2026</h4></div></div><p class="text-[11px] text-gray-700 mb-2">Challenge Completion · Jun 2026</p></div>
+</div>
+</div>
+</section>
+
+<section id="education" class="relative z-10 py-24 px-5 bg-sf/50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-vt mb-3 block">// Education & Leadership</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight">My <span class="gt">Foundation</span></h2></div>
+<div class="grid lg:grid-cols-2 gap-8">
+<div class="rl"><h3 class="text-lg font-sg font-extrabold mb-6 flex items-center gap-2.5"><iconify-icon icon="lucide:graduation-cap" width="22" class="text-gd"></iconify-icon> Education</h3>
+<div class="hc gl rounded-2xl p-7 shimmer draw"><div class="flex items-start gap-4"><div class="w-16 h-16 rounded-2xl bg-gd/10 border border-gd/15 flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:building-2" width="28" class="text-gd"></iconify-icon></div><div><h4 class="text-lg font-sg font-extrabold">UET Lahore</h4><p class="text-gd font-semibold text-sm">University of Engineering & Technology</p><p class="text-gray-700 text-xs mt-1">2021 – 2025 · Lahore, Pakistan</p><p class="text-gray-300 text-sm mt-3">BS Computer Engineering</p><div class="mt-3 inline-flex items-center gap-2 gl rounded-lg px-3 py-1.5 border-gd/15"><iconify-icon icon="lucide:award" width="14" class="text-gd"></iconify-icon><span class="text-sm font-extrabold text-gd">CGPA: 3.45</span></div></div></div></div></div>
+<div class="rr"><h3 class="text-lg font-sg font-extrabold mb-6 flex items-center gap-2.5"><iconify-icon icon="lucide:users" width="22" class="text-em"></iconify-icon> Industry Impact</h3>
+<div class="space-y-4">
+<div class="hc gl rounded-2xl p-6 shimmer draw"><div class="flex items-start gap-3"><div class="w-10 h-10 rounded-xl bg-em/10 border border-em/15 flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:factory" width="18" class="text-em"></iconify-icon></div><div><h4 class="text-sm font-sg font-extrabold">Industrial Deployment</h4><p class="text-em font-semibold text-xs mt-0.5">Siddiq Leather Works</p><p class="text-gray-600 text-xs mt-2 leading-relaxed">Deployed computer vision system in real tannery environment — improved measurement accuracy and production tracking.</p></div></div></div>
+<div class="hc gl rounded-2xl p-6 shimmer draw"><div class="flex items-start gap-3"><div class="w-10 h-10 rounded-xl bg-vt/10 border border-vt/15 flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:book-open" width="18" class="text-vt"></iconify-icon></div><div><h4 class="text-sm font-sg font-extrabold">Continuous Learner</h4><p class="text-vt font-semibold text-xs mt-0.5">14 Certifications · 6 Companies</p><p class="text-gray-600 text-xs mt-2 leading-relaxed">Proactively upskilling through Google, Anthropic, Databricks, IBM, AWS & Udacity certifications.</p></div></div></div>
+</div></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="relative z-10 py-24 px-5">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16"><span class="rv text-[10px] font-bold uppercase tracking-[.25em] text-gd mb-3 block">// Get In Touch</span><h2 class="rv e1 text-3xl sm:text-4xl lg:text-5xl font-sg font-extrabold tracking-tight">Let's <span class="gt">Connect</span></h2><p class="rv e2 text-gray-500 mt-4 max-w-lg mx-auto">Open to AI engineering roles, collaborations, and interesting conversations about intelligent systems.</p></div>
+<div class="rv e3 gls rounded-3xl p-8 sm:p-12 shimmer">
+<div class="grid sm:grid-cols-2 gap-6 mb-10">
+<a href="mailto:aneeqimran.ai@gmail.com" class="hc gl rounded-2xl p-6 flex items-center gap-4 group ripple draw"><div class="w-14 h-14 rounded-2xl bg-gd/10 border border-gd/15 flex items-center justify-center flex-shrink-0 group-hover:bg-gd/20 transition-all"><iconify-icon icon="lucide:mail" width="24" class="text-gd"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Email</p><p class="text-sm font-semibold text-gray-300 group-hover:text-gd transition-colors">aneeqimran.ai@gmail.com</p></div></a>
+<a href="tel:+923098038433" class="hc gl rounded-2xl p-6 flex items-center gap-4 group ripple draw"><div class="w-14 h-14 rounded-2xl bg-em/10 border border-em/15 flex items-center justify-center flex-shrink-0 group-hover:bg-em/20 transition-all"><iconify-icon icon="lucide:phone" width="24" class="text-em"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">Phone</p><p class="text-sm font-semibold text-gray-300 group-hover:text-em transition-colors">+92 309 803 8433</p></div></a>
+<a href="https://www.linkedin.com/in/aneeq-imran/" target="_blank" class="hc gl rounded-2xl p-6 flex items-center gap-4 group ripple draw"><div class="w-14 h-14 rounded-2xl bg-vt/10 border border-vt/15 flex items-center justify-center flex-shrink-0 group-hover:bg-vt/20 transition-all"><iconify-icon icon="lucide:linkedin" width="24" class="text-vt"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">LinkedIn</p><p class="text-sm font-semibold text-gray-300 group-hover:text-vt transition-colors">linkedin.com/in/aneeq-imran</p></div></a>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="hc gl rounded-2xl p-6 flex items-center gap-4 group ripple draw"><div class="w-14 h-14 rounded-2xl bg-rs/10 border border-rs/15 flex items-center justify-center flex-shrink-0 group-hover:bg-rs/20 transition-all"><iconify-icon icon="lucide:github" width="24" class="text-rs"></iconify-icon></div><div><p class="text-[10px] font-bold uppercase tracking-wider text-gray-600 mb-0.5">GitHub</p><p class="text-sm font-semibold text-gray-300 group-hover:text-rs transition-colors">github.com/ANEEQIMRAN-AI</p></div></a>
+</div>
+<div class="text-center"><a href="mailto:aneeqimran.ai@gmail.com" class="mb bg-gradient-to-r from-gd to-em text-base font-bold px-10 py-4 rounded-xl hover:shadow-2xl hover:shadow-gd/20 inline-flex items-center gap-3 transition-all hover:-translate-y-1 ripple text-lg">Send Me a Message <iconify-icon icon="lucide:send" width="20"></iconify-icon></a></div>
+</div>
+</div>
+</section>
+
+<footer class="relative z-10 py-8 px-5 border-t border-white/[.03]">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-xs text-gray-700">© 2025 Aneeq Imran. Engineered with <iconify-icon icon="lucide:heart" width="12" class="text-gd inline"></iconify-icon> and AI.</p>
+<div class="flex items-center gap-4">
+<a href="https://www.linkedin.com/in/aneeq-imran/" target="_blank" class="text-gray-700 hover:text-gd transition-colors"><iconify-icon icon="lucide:linkedin" width="16"></iconify-icon></a>
+<a href="https://github.com/ANEEQIMRAN-AI" target="_blank" class="text-gray-700 hover:text-gd transition-colors"><iconify-icon icon="lucide:github" width="16"></iconify-icon></a>
+<a href="mailto:aneeqimran.ai@gmail.com" class="text-gray-700 hover:text-gd transition-colors"><iconify-icon icon="lucide:mail" width="16"></iconify-icon></a>
+</div>
+</div>
+</footer>
+
+<script>
+const c=document.getElementById('ptc'),x=c.getContext('2d');
+let W,H,pts=[];
+function resize(){W=c.width=innerWidth;H=c.height=innerHeight;init()}
+function init(){pts=[];const n=Math.min(70,Math.floor(W*H/18000));for(let i=0;i<n;i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.8+.5})}
+function draw(){x.clearRect(0,0,W,H);const md=140;
+pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1});
+for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<md){x.strokeStyle=`rgba(34,197,94,${(1-d/md)*.12})`;x.lineWidth=.5;x.beginPath();x.moveTo(pts[i].x,pts[i].y);x.lineTo(pts[j].x,pts[j].y);x.stroke()}}
+pts.forEach(p=>{x.fillStyle='rgba(34,197,94,0.35)';x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fill()});requestAnimationFrame(draw)}
+resize();draw();addEventListener('resize',resize);
+
+const roles=['AI Engineer','Gen AI Developer','RAG Architect','Agentic Systems Builder','LLM Specialist','System Engineer'];
+let ri=0,ci=0,del=false;const te=document.getElementById('typed');
+function type(){const cur=roles[ri];if(!del){te.textContent=cur.slice(0,++ci);if(ci===cur.length){del=true;setTimeout(type,2000);return}}else{te.textContent=cur.slice(0,--ci);if(ci===0){del=false;ri=(ri+1)%roles.length}}setTimeout(type,del?40:80)}type();
+
+function animCtr(e){const t=+e.dataset.target,dur=2000,st=performance.now();(function up(now){const p=Math.min((now-st)/dur,1),v=Math.floor(p*t*(p<.5?2*p:2-p*2+Math.random()*.1));e.textContent=v;p<1?requestAnimationFrame(up):e.textContent=t})(st)}
+let ctrDone=new Set();
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('a');e.target.querySelectorAll('.ctr').forEach(c=>{const k=c.dataset.target;if(!ctrDone.has(k)){animCtr(c);ctrDone.add(k)}})}})},{threshold:.15,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.rv,.rl,.rr,.rs').forEach(e=>io.observe(e));
+
+const rc=document.getElementById('radar'),rx=rc.getContext('2d');
+const labels=['Python','LangChain','LangGraph','RAG','Prompt Eng','CrewAI','FastAPI','ML/AI'],vals=[.95,.93,.93,.90,.92,.87,.85,.90];
+const colors=['#22c55e','#4ade80','#10b981','#34d399','#059669','#16a34a','#22c55e','#4ade80'];
+let rProg=0;function drawRadar(){const w=rc.width,h=rc.height,cx=w/2,cy=h/2,r=Math.min(w,h)*.36;
+rx.clearRect(0,0,w,h);for(let l=1;l<=5;l++){rx.strokeStyle='rgba(34,197,94,0.06)';rx.lineWidth=1;rx.beginPath();for(let i=0;i<=labels.length;i++){const a=(Math.PI*2/labels.length)*i-Math.PI/2,lr=r*l/5;const px=cx+Math.cos(a)*lr,py=cy+Math.sin(a)*lr;i===0?rx.moveTo(px,py):rx.lineTo(px,py)}rx.closePath();rx.stroke()}
+labels.forEach((lb,i)=>{const a=(Math.PI*2/labels.length)*i-Math.PI/2;rx.strokeStyle='rgba(34,197,94,0.08)';rx.beginPath();rx.moveTo(cx,cy);rx.lineTo(cx+Math.cos(a)*r,cy+Math.sin(a)*r);rx.stroke();
+const lx=cx+Math.cos(a)*(r+28),ly=cy+Math.sin(a)*(r+28);rx.fillStyle='rgba(228,228,236,0.5)';rx.font='600 11px Inter';rx.textAlign='center';rx.textBaseline='middle';rx.fillText(lb,lx,ly)});
+rx.beginPath();for(let i=0;i<=labels.length;i++){const idx=i%labels.length,a=(Math.PI*2/labels.length)*idx-Math.PI/2,v=vals[idx]*r*Math.min(rProg,1);const px=cx+Math.cos(a)*v,py=cy+Math.sin(a)*v;i===0?rx.moveTo(px,py):rx.lineTo(px,py)}rx.closePath();rx.fillStyle='rgba(34,197,94,0.12)';rx.fill();rx.strokeStyle='rgba(34,197,94,0.6)';rx.lineWidth=2;rx.stroke();
+labels.forEach((_,i)=>{const a=(Math.PI*2/labels.length)*i-Math.PI/2,v=vals[i]*r*Math.min(rProg,1);const px=cx+Math.cos(a)*v,py=cy+Math.sin(a)*v;
+rx.beginPath();rx.arc(px,py,5,0,Math.PI*2);rx.fillStyle=colors[i];rx.fill();rx.strokeStyle='rgba(5,5,8,0.8)';rx.lineWidth=2;rx.stroke();
+rx.fillStyle='rgba(228,228,236,0.7)';rx.font='bold 10px Inter';rx.fillText(Math.round(vals[i]*100)+'%',px,py-14)});
+if(rProg<1){rProg+=.02;requestAnimationFrame(drawRadar)}}
+const rObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){rProg=0;drawRadar();rObs.unobserve(e.target)}})},{threshold:.3});rObs.observe(rc);
+
+const mb=document.getElementById('mobMenu'),mBtn=document.getElementById('menuBtn');let mOpen=false;
+mBtn.addEventListener('click',()=>{mOpen=!mOpen;mb.classList.toggle('op',mOpen);const s=mBtn.querySelectorAll('.ml');if(mOpen){s[0].style.transform='rotate(45deg) translate(4px,4px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(3px,-3px)';s[2].style.width='24px'}else{s[0].style.transform='';s[1].style.opacity='1';s[2].style.transform='';s[2].style.width='16px'}});
+document.querySelectorAll('.m2').forEach(l=>l.addEventListener('click',()=>{mOpen=false;mb.classList.remove('op');const s=mBtn.querySelectorAll('.ml');s[0].style.transform='';s[1].style.opacity='1';s[2].style.transform='';s[2].style.width='16px'}));
+
+const nav=document.getElementById('nav');addEventListener('scroll',()=>{nav.style.background=scrollY>60?'rgba(5,5,8,0.85)':'transparent';nav.style.backdropFilter=scrollY>60?'blur(20px)':'none';nav.style.borderBottom=scrollY>60?'1px solid rgba(34,197,94,0.06)':'none'});
+
+const secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAll('.nl');
+addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(scrollY>=s.offsetTop-200)cur=s.id});nls.forEach(l=>{l.classList.toggle('act',l.getAttribute('href')==='#'+cur)})});
+</script>
+</body>
+</html>
